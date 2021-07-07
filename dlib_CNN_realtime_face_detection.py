@@ -7,8 +7,7 @@ from datetime import datetime
 
 # For efficiency of time testing
 start = datetime.now()
-start_time = start.strftime("%H:%M:%S")
-print("Starting Time =", start_time)
+print("Starting Time =", start)
 ###########################################################
 
 # initialize dlib's face detector (CNN-based)
@@ -41,8 +40,7 @@ while True:
 
     ##################################################
     end = datetime.now()
-    end_time = end.strftime("%H:%M:%S")
-    print("End Time =", end_time)
+    print("End Time =", end)
     duration = end - start
     duration_in_s = duration.total_seconds()
     print(duration_in_s)

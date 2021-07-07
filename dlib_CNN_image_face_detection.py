@@ -8,8 +8,7 @@ from datetime import datetime
 
 # for efficiency of time testing
 start = datetime.now()
-start_time = start.strftime("%H:%M:%S")
-print("Starting Time =", start_time)
+print("Starting Time =", start)
 ###########################################################
 
 # Initialize the image path
@@ -41,8 +40,7 @@ cv2.imshow("Facial Detection Dlib CNN Based", image)
 
 ##################################################
 end = datetime.now()
-end_time = end.strftime("%H:%M:%S")
-print("End Time =", end_time)
+print("End Time =", end)
 duration = end - start
 duration_in_s = duration.total_seconds()
 print(duration_in_s)
